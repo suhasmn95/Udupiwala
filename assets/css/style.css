@@ -343,7 +343,7 @@ button, a { transition: var(--transition); }
   padding-block: 25px;
 }
 
-.header-bottom .logo img { height: 100px  }
+.header-bottom .logo img { height: 150px; }
 
 .navbar {
   background: var(--white);
@@ -509,7 +509,7 @@ button, a { transition: var(--transition); }
   border-radius: 4px;
 }
 
-.about .section-subtitle { margin-inline: 0; }
+.about .section-subtitle { margin-inline: 0;  }
 
 .about .section-title {
   --text-align: left;
