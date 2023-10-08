@@ -82,6 +82,101 @@
         margin: none;
     }
     
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
+.footer {
+  background: var(--raisin-black-1);
+  color: var(--white);
+  margin-bottom: 68px;
+}
+
+.footer .container { padding-inline: 30px; }
+
+.footer a { color: inherit; }
+
+.footer-top {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.footer-brand { margin-bottom: 70px; }
+
+.footer-brand .logo { margin-bottom: 15px; }
+
+.section-text {
+  font-size: var(--fs-5);
+  line-height: 1.8;
+  margin-bottom: 30px;
+  max-width: 45ch;
+}
+
+.contact-list {
+  display: grid;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.contact-link ion-icon { font-size: 18px; }
+
+.contact-link :is(address, span) {
+  font-size: var(--fs-5);
+  transition: var(--transition);
+}
+
+.contact-link:is(:hover, :focus) span { color: var(--orange-soda); }
+
+.social-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-list:not(:last-child) { margin-bottom: 50px; }
+
+.footer-list-title {
+  font-family: var(--ff-poppins);
+  font-size: var(--fs-3);
+  font-weight: var(--fw-700);
+  margin-bottom: 15px;
+}
+
+.footer-link {
+  font-size: var(--fs-5);
+  padding-block: 10px;
+}
+
+.footer-link:is(:hover, :focus) { color: var(--orange-soda); }
+
+.footer-bottom {
+  background: var(--raisin-black-2);
+  padding-block: 25px;
+}
+
+.copyright {
+  font-size: var(--fs-5);
+  text-align: center;
+}
+
+.copyright a { display: inline-block; }
+
+.copyright a:is(:hover, :focus) { color: var(--orange-soda); }
+
+.constructbrick{
+        display: flex;
+        padding-left: 45%;
+}
+
+
+
+    
     </style>
 </head>
 <body>
@@ -222,11 +317,99 @@
 
       <h2>All Properties</h2>
 
-      <p>We're working on something awesome. Please check back soon!</p>
-    
+      <p class="H3_Centre">We're working on something awesome. Please check back soon!</p>
+      <img class="constructbrick" height="100px" src="./assets/images/wall.gif" alt="contstuction gif image" />
     
       </script>
     </section>
-     
+    
+     <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+         
+          <h4>CONTACT</h4>
+          <ul class="contact-list">
+
+            <li>
+              <a href="#" class="contact-link">
+                <ion-icon name="location-outline"></ion-icon>
+
+                <address>Udupi, Karnataka, India</address>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:shreyasskudupi@gmail.com" class="contact-link">
+                <ion-icon name="mail-outline"></ion-icon>
+
+                <span>shreyasskudupi@gmail.com</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/udupi_wala/" class="contact-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+                 
+                <span>Udupi wala</span>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="footer-link-box">
+          <h4>UDUPI WALA</h4>
+          <ul class="footer-list">
+
+            <li>
+              <a href="./index.html" class="footer-link">UW Home</a>
+            </li>
+
+            <li>
+              <a href="./About.html" class="footer-link">About</a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/udupi_wala/" class="footer-link">Contact Me</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 <a href="./About.html">Suhas Nayak</a>. All Rights Reserved
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>
