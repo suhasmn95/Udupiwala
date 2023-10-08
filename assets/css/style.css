@@ -343,7 +343,7 @@ button, a { transition: var(--transition); }
   padding-block: 25px;
 }
 
-.header-bottom .logo img { height: 150px; }
+.header-bottom .logo img { height: 150px  }
 
 .navbar {
   background: var(--white);

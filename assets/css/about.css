@@ -67,4 +67,30 @@ body {
     }
   }
 
+  .anime{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg,#FFDEAD,#FFFAFA,#F0FFFF,#FFFAF0);
+    background-size: 300% 300%;
+    animation: color 10s ease-in-out infinite;
+  }
+
+  .logo-only{
+    height: 50px;
+    text-align: center;
+    
+  }
+
+  @keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0 50%;
+    }
+  }
+
   
